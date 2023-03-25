@@ -1,20 +1,54 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-	<title>Sobre nosotros - Black Wing Asesoría Financiera</title>
-  <link rel="icon" href="../images/favicon-32x32.png" type="image/x-icon" />
-	<!-- Enlaces a hojas de estilo CSS y scripts -->
-	<link rel="stylesheet" type="text/css" href="../css/style.css">
-  <!--GFonts-->
-  <link rel="stylesheet" href="../css/fonts.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Lora&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
-  <!--Script?-->
-  <script src="script.js"></script>
-</head>
-<body>
-  <header class="container-menu">
+  <head>
+    <title>Sobre nosotros - Black Wing Asesoría Financiera</title>
+    <link rel="icon" href="../images/favicon-32x32.png" type="image/x-icon" />
+    <!-- Enlaces a hojas de estilo CSS y scripts -->
+    <link rel="stylesheet" type="text/css" href="../css/style.css" />
+    <!--GFonts-->
+    <link rel="stylesheet" href="../css/fonts.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora&family=Montserrat:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <!--Script?-->
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <nav class="nav">
+      <div class="nav__container">
+        <div class="nav__logo">
+          <img
+            class="nav__img"
+            src="../images/Logo.png"
+            alt="Logo black Wing"
+          />
+        </div>
+
+        <h1 class="nav__title">Black Wing</h1>
+        <!-- Menu mobile -->
+        <label for="menu-mobile" class="nav__label">
+          <img
+            class="nav__img"
+            src="assets/hamburguer.svg"
+            alt="icono menu mobile"
+          />
+        </label>
+        <input type="checkbox" id="menu-mobile" class="nav__input" />
+        <!-- Fin menu mobile -->
+
+        <div class="nav__menu">
+          <a href="../index.html" class="nav__item">Home</a>
+          <a href="./about.html" class="nav__item">Empresa</a>
+          <a href="./services.html" class="nav__item">Servicios</a>
+          <a href="./blog.html" class="nav__item">Blog</a>
+          <a href="./contact.html" class="nav__item">Contacto</a>
+        </div>
+      </div>
+    </nav>
+    <!-- <header class="container-menu">
     <div class="logo">
       <img src="../images/Logo.png" alt="Logo black Wing">
     </div>
@@ -30,48 +64,58 @@
             <li class="menu-items"><a href="./contact.html">Contacto</a></li>
         </ul>
     </div>
-  </header>
-  <hr>
-  <main>
-    <h2>Sobre nosotros</h2>
-    <section class="nosotros-container">
-      <div class="vision">
-        <h3>Visión</h3>
-        <p>En Black Wing convertirnos en la empresa de asesoramiento financiero líder en el mercado, siendo reconocidos por nuestra innovación, experiencia y ética profesional, y siendo la opción preferida de los inversores que buscan un enfoque personalizado, integral y tecnológicamente avanzado para administrar sus finanzas.</p>
-      </div>
-      <div class="mision">
-        <h3>Misión</h3>
-        <p>Nuestra misión es ofrecer asesoramiento financiero de alta calidad y personalizado a nuestros clientes, utilizando las últimas tecnologías y herramientas para garantizar que sus inversiones estén en línea con sus objetivos a corto y largo plazo.</p>
-      </div>
-    </section>
-    <h2>Nuestro equipo</h2>
-    <section class="empleados-container">
-      <div class="empleados-item">
-        <img src="../images/empleado1.webp" alt="Foto del empleado 1">
-        <h3>Nombre del empleado 1</h3>
-        <p>Descripción del empleado 1</p>
-      </div>
-      <div class="empleados-item">
-        <img src="../images/empleado2.webp" alt="Foto del empleado 2">
-        <h3>Nombre del empleado 2</h3>
-        <p>Descripción del empleado 2</p>
-      </div>
-      <div class="empleados-item">
-        <img src="../images/empleado3.webp" alt="Foto del empleado 3">
-        <h3>Nombre del empleado 3</h3>
-        <p>Descripción del empleado 3</p>
-      </div>
-      <div class="empleados-item">
-        <img src="../images/empleado4.webp" alt="Foto del empleado 4">
-        <h3>Nombre del empleado 4</h3>
-        <p>Descripción del empleado 4</p>
-      </div>
-    </section>
-                    
-  </main>
-    
-	<footer>
-		<!-- Contenido del pie de página -->
-	</footer>
-</body>
+  </header> -->
+    <hr />
+    <main>
+      <h2>Sobre nosotros</h2>
+      <section class="nosotros-container">
+        <div class="vision">
+          <h3>Visión</h3>
+          <p>
+            En Black Wing convertirnos en la empresa de asesoramiento financiero
+            líder en el mercado, siendo reconocidos por nuestra innovación,
+            experiencia y ética profesional, y siendo la opción preferida de los
+            inversores que buscan un enfoque personalizado, integral y
+            tecnológicamente avanzado para administrar sus finanzas.
+          </p>
+        </div>
+        <div class="mision">
+          <h3>Misión</h3>
+          <p>
+            Nuestra misión es ofrecer asesoramiento financiero de alta calidad y
+            personalizado a nuestros clientes, utilizando las últimas
+            tecnologías y herramientas para garantizar que sus inversiones estén
+            en línea con sus objetivos a corto y largo plazo.
+          </p>
+        </div>
+      </section>
+      <h2>Nuestro equipo</h2>
+      <section class="empleados-container">
+        <div class="empleados-item">
+          <img src="../images/empleado1.webp" alt="Foto del empleado 1" />
+          <h3>Nombre del empleado 1</h3>
+          <p>Descripción del empleado 1</p>
+        </div>
+        <div class="empleados-item">
+          <img src="../images/empleado2.webp" alt="Foto del empleado 2" />
+          <h3>Nombre del empleado 2</h3>
+          <p>Descripción del empleado 2</p>
+        </div>
+        <div class="empleados-item">
+          <img src="../images/empleado3.webp" alt="Foto del empleado 3" />
+          <h3>Nombre del empleado 3</h3>
+          <p>Descripción del empleado 3</p>
+        </div>
+        <div class="empleados-item">
+          <img src="../images/empleado4.webp" alt="Foto del empleado 4" />
+          <h3>Nombre del empleado 4</h3>
+          <p>Descripción del empleado 4</p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <!-- Contenido del pie de página -->
+    </footer>
+  </body>
 </html>

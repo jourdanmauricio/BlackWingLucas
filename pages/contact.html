@@ -1,20 +1,54 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-	<title>Contáctanos - Black Wing Asesoría Financiera</title>
+  <head>
+    <title>Contáctanos - Black Wing Asesoría Financiera</title>
     <link rel="icon" href="../images/favicon-32x32.png" type="image/x-icon" />
-	<!-- Enlaces a hojas de estilo CSS y scripts -->
-	<link rel="stylesheet" type="text/css" href="../css/style.css">
-	<!--GFonts-->
-    <link rel="stylesheet" href="../css/fonts.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lora&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <!-- Enlaces a hojas de estilo CSS y scripts -->
+    <link rel="stylesheet" type="text/css" href="../css/style.css" />
+    <!--GFonts-->
+    <link rel="stylesheet" href="../css/fonts.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora&family=Montserrat:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
     <!--Script?-->
-	<script src="script.js"></script>
-</head>
-<body>
-  <header class="container-menu">
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <nav class="nav">
+      <div class="nav__container">
+        <div class="nav__logo">
+          <img
+            class="nav__img"
+            src="../images/Logo.png"
+            alt="Logo black Wing"
+          />
+        </div>
+
+        <h1 class="nav__title">Black Wing</h1>
+        <!-- Menu mobile -->
+        <label for="menu-mobile" class="nav__label">
+          <img
+            class="nav__img"
+            src="assets/hamburguer.svg"
+            alt="icono menu mobile"
+          />
+        </label>
+        <input type="checkbox" id="menu-mobile" class="nav__input" />
+        <!-- Fin menu mobile -->
+
+        <div class="nav__menu">
+          <a href="../index.html" class="nav__item">Home</a>
+          <a href="./about.html" class="nav__item">Empresa</a>
+          <a href="./services.html" class="nav__item">Servicios</a>
+          <a href="./blog.html" class="nav__item">Blog</a>
+          <a href="./contact.html" class="nav__item">Contacto</a>
+        </div>
+      </div>
+    </nav>
+    <!-- <header class="container-menu">
     <div class="logo">
       <img src="../images/Logo.png" alt="Logo black Wing">
     </div>
@@ -30,37 +64,45 @@
             <li class="menu-items"><a href="./contact.html">Contacto</a></li>
         </ul>
     </div>
-</header>
-    <hr>
-	<main>
-        <section>
-          <h2>Contáctanos</h2>
-          <form>
-            <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" name="nombre" required>
-      
-            <label for="apellido">Apellido:</label>
-            <input type="text" id="apellido" name="apellido" required>
-      
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-      
-            <label for="telefono">Teléfono:</label>
-            <input type="tel" id="telefono" name="telefono" required>
-      
-            <label for="mensaje">Mensaje:</label>
-            <textarea id="mensaje" name="mensaje" required></textarea>
-      
-            <button type="submit">Enviar</button>
-          </form>
-        </section>
-        <h2>Ubicación</h2>
-        <section class="container-map">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3271.4439255687107!2d-57.953861783001706!3d-34.92040193946927!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sar!4v1677105051311!5m2!1ses!2sar" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </section>
-    </main>     
-	<footer>
-		<!-- Contenido del pie de página -->
-	</footer>
-</body>
+</header> -->
+    <hr />
+    <main>
+      <section>
+        <h2>Contáctanos</h2>
+        <form>
+          <label for="nombre">Nombre:</label>
+          <input type="text" id="nombre" name="nombre" required />
+
+          <label for="apellido">Apellido:</label>
+          <input type="text" id="apellido" name="apellido" required />
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="telefono">Teléfono:</label>
+          <input type="tel" id="telefono" name="telefono" required />
+
+          <label for="mensaje">Mensaje:</label>
+          <textarea id="mensaje" name="mensaje" required></textarea>
+
+          <button type="submit">Enviar</button>
+        </form>
+      </section>
+      <h2>Ubicación</h2>
+      <section class="container-map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3271.4439255687107!2d-57.953861783001706!3d-34.92040193946927!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sar!4v1677105051311!5m2!1ses!2sar"
+          width="100%"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </section>
+    </main>
+    <footer>
+      <!-- Contenido del pie de página -->
+    </footer>
+  </body>
 </html>

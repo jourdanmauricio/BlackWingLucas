@@ -1,20 +1,55 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-	<title>Nuestros servicios - Black Wing Asesoría Financiera</title>
+  <head>
+    <title>Nuestros servicios - Black Wing Asesoría Financiera</title>
     <link rel="icon" href="../images/favicon-32x32.png" type="image/x-icon" />
-	<!-- Enlaces a hojas de estilo CSS y scripts -->
-	<link rel="stylesheet" type="text/css" href="../css/style.css">
+    <!-- Enlaces a hojas de estilo CSS y scripts -->
+    <link rel="stylesheet" type="text/css" href="../css/style.css" />
     <!--GFonts-->
-    <link rel="stylesheet" href="../css/fonts.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lora&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/fonts.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora&family=Montserrat:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
     <!--Script?-->
-	<script src="script.js"></script>
-</head>
-<body>
-    <header class="container-menu">
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <nav class="nav">
+      <div class="nav__container">
+        <div class="nav__logo">
+          <img
+            class="nav__img"
+            src="../images/Logo.png"
+            alt="Logo black Wing"
+          />
+        </div>
+
+        <h1 class="nav__title">Black Wing</h1>
+        <!-- Menu mobile -->
+        <label for="menu-mobile" class="nav__label">
+          <img
+            class="nav__img"
+            src="assets/hamburguer.svg"
+            alt="icono menu mobile"
+          />
+        </label>
+        <input type="checkbox" id="menu-mobile" class="nav__input" />
+        <!-- Fin menu mobile -->
+
+        <div class="nav__menu">
+          <a href="../index.html" class="nav__item">Home</a>
+          <a href="./about.html" class="nav__item">Empresa</a>
+          <a href="./services.html" class="nav__item">Servicios</a>
+          <a href="./blog.html" class="nav__item">Blog</a>
+          <a href="./contact.html" class="nav__item">Contacto</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- <header class="container-menu">
         <div class="logo">
           <img src="../images/Logo.png" alt="Logo black Wing">
         </div>
@@ -30,35 +65,47 @@
                 <li class="menu-items"><a href="./contact.html">Contacto</a></li>
             </ul>
         </div>
-    </header>  
-    <hr>
-	<main>
-        <h2>Nuestros servicios</h2>
-        <section class="servicio">
-            <img src="ruta/a/imagen1.jpg" alt="Imagen del servicio 1">
-            <div class="descripcion">
-                <h3>Ahorro e inversión</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id dolor euismod, tempor nibh sit amet, hendrerit nibh. Duis sollicitudin libero non augue egestas, non facilisis urna venenatis.</p>
-            </div>
-        </section>
-        <section class="servicio">
-            <div class="descripcion">
-                <h3>Asesoramiento a empresas</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id dolor euismod, tempor nibh sit amet, hendrerit nibh. Duis sollicitudin libero non augue egestas, non facilisis urna venenatis.</p>
-            </div>
-            <img src="ruta/a/imagen2.jpg" alt="Imagen del servicio 2">
-        </section>
-        <section class="servicio">
-            <img src="ruta/a/imagen3.jpg" alt="Imagen del servicio 3">
-            <div class="descripcion">
-                <h3>Protección patrimonial</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id dolor euismod, tempor nibh sit amet, hendrerit nibh. Duis sollicitudin libero non augue egestas, non facilisis urna venenatis.</p>
-            </div>
-        </section>
+    </header>   -->
+    <hr />
+    <main>
+      <h2>Nuestros servicios</h2>
+      <section class="servicio">
+        <img src="ruta/a/imagen1.jpg" alt="Imagen del servicio 1" />
+        <div class="descripcion">
+          <h3>Ahorro e inversión</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id
+            dolor euismod, tempor nibh sit amet, hendrerit nibh. Duis
+            sollicitudin libero non augue egestas, non facilisis urna venenatis.
+          </p>
+        </div>
+      </section>
+      <section class="servicio">
+        <div class="descripcion">
+          <h3>Asesoramiento a empresas</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id
+            dolor euismod, tempor nibh sit amet, hendrerit nibh. Duis
+            sollicitudin libero non augue egestas, non facilisis urna venenatis.
+          </p>
+        </div>
+        <img src="ruta/a/imagen2.jpg" alt="Imagen del servicio 2" />
+      </section>
+      <section class="servicio">
+        <img src="ruta/a/imagen3.jpg" alt="Imagen del servicio 3" />
+        <div class="descripcion">
+          <h3>Protección patrimonial</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id
+            dolor euismod, tempor nibh sit amet, hendrerit nibh. Duis
+            sollicitudin libero non augue egestas, non facilisis urna venenatis.
+          </p>
+        </div>
+      </section>
     </main>
-    <hr>
-	<footer>
-		<!-- Contenido del pie de página -->
-	</footer>
-</body>
+    <hr />
+    <footer>
+      <!-- Contenido del pie de página -->
+    </footer>
+  </body>
 </html>

@@ -2,9 +2,9 @@
 <html lang="es">
   <head>
     <title>Black Wing - Asesoría Financiera</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="images/favicon-32x32.png" type="image/x-icon" />
     <!-- Enlaces a hojas de estilo CSS y scripts -->
-    <link rel="stylesheet" type="text/css" href="./css/menu.css" />
     <link rel="stylesheet" type="text/css" href="./css/style.css" />
     <!--GFonts-->
     <link rel="stylesheet" href="./css/fonts.css" />
@@ -14,9 +14,6 @@
       href="https://fonts.googleapis.com/css2?family=Lora&family=Montserrat:wght@400;600&display=swap"
       rel="stylesheet"
     />
-    <!--Script?-->
-    <!-- Como no encuentra el archivo script.js, muestra un error en la consola -->
-    <!-- <script src="script.js"></script> -->
   </head>
 
   <body>
@@ -39,56 +36,32 @@
         <!-- Fin menu mobile -->
 
         <div class="nav__menu">
-          <a href="#" class="nav__item">Home</a>
-          <a href="#" class="nav__item">Empresa</a>
-          <a href="#" class="nav__item">Servicios</a>
-          <a href="#" class="nav__item">Blog</a>
-          <a href="#" class="nav__item">Contacto</a>
+          <a href="./" class="nav__item">Home</a>
+          <a href="./pages/about.html" class="nav__item">Empresa</a>
+          <a href="./pages/services.html" class="nav__item">Servicios</a>
+          <a href="./pages/blog.html" class="nav__item">Blog</a>
+          <a href="./pages/contact.html" class="nav__item">Contacto</a>
         </div>
       </div>
     </nav>
-    <!-- <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /> -->
-    <!-- <header class="container-menu">
-      <div class="logo">
-        <img src="./images/Logo.png" alt="Logo black Wing" />
-      </div>
-      <div class="titulo">
-        <h1>Black Wing</h1>
-      </div>
-      Cambiamos el div por nav. Es más semántico
-      <nav>
-        <ul class="menu">
-          <li class="menu-items"><a href="./">Home</a></li>
-          <li class="menu-items"><a href="./pages/about.html">Empresa</a></li>
-          <li class="menu-items">
-            <a href="./pages/services.html">Servicios</a>
-          </li>
-          <li class="menu-items"><a href="./pages/blog.html">Blog</a></li>
-          <li class="menu-items">
-            <a href="./pages/contact.html">Contacto</a>
-          </li>
-        </ul>
-      </nav>
-    </header> -->
-    <hr />
-    <main>
-      <div class="banner">
-        <div class="container-banner">
-          <img src="images/banner ejemplo.jpg" alt="Banner de Black Wing" />
+
+    <header>
+      <div class="hero">
+        <div class="bienvenidos">
+          <h2>¡Bienvenidos a Black Wing!</h2>
+          <p>
+            Somos una empresa de asesoría financiera comprometida con nuestros
+            clientes.
+          </p>
         </div>
       </div>
+    </header>
 
-      <div class="bienvenidos">
-        <h2>¡Bienvenidos a Black Wing!</h2>
-        <p>
-          Somos una empresa de asesoría financiera comprometida con nuestros
-          clientes.
-        </p>
-      </div>
-      <div class="seccion1">
-        <img src="images/ejemplo.png" alt="Imagen de la sección 1" />
-        <div class="texto1">
-          <h3>Servicios destacados</h3>
+    <hr />
+    <main>
+      <section class="section">
+        <article class="section__article">
+          <h2>Servicios destacados</h2>
           <p>
             Bienvenido a nuestra agencia de asesoría financiera integral con
             enfoque en criptomonedas. Nuestro objetivo es brindar soluciones
@@ -101,41 +74,57 @@
             información detallada sobre nuestros servicios, nuestra experiencia
             y cómo podemos ayudarlo a alcanzar sus objetivos financieros.
           </p>
-        </div>
-      </div>
-      <div class="seccion2">
-        <div class="texto2">
-          <h3>Ultimas Noticias</h3>
+        </article>
+        <article class="section__article">
+          <img
+            class="section__img"
+            src="images/ejemplo.png"
+            alt="Imagen de la sección 1"
+          />
+        </article>
+      </section>
+
+      <section class="section section--reverse">
+        <article class="section__article">
+          <h2>Ultimas Noticias</h2>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste
             mollitia recusandae fugiat corrupti exercitationem officia amet
             beatae quisquam, quia facere officiis, dolores consectetur quibusdam
             modi corporis similique sint? Nam, sapiente.
           </p>
+        </article>
+        <article class="section__article">
+          <img
+            class="section__img"
+            src="./images/ejemplo.png"
+            alt="Imagen de la sección 2"
+          />
+        </article>
+      </section>
+      <section class="experiences">
+        <h3>Experiencias</h3>
+        <div class="experiences__container">
+          <iframe
+            class="experiences__item"
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/kMTBs_1cs6M"
+            frameborder="0"
+            allow="autoplay; encrypted-media"
+            allowfullscreen
+          ></iframe>
+          <iframe
+            class="experiences__item"
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/9sCVcWD1Svs"
+            frameborder="0"
+            allow="autoplay; encrypted-media"
+            allowfullscreen
+          ></iframe>
         </div>
-        <img src="./images/ejemplo.png" alt="Imagen de la sección 2" />
-      </div>
-      <h3>Experiencias</h3>
-      <div class="experiencias-container">
-        <iframe
-          class="experiencias-item"
-          width="560"
-          height="315"
-          src="https://www.youtube.com/embed/kMTBs_1cs6M"
-          frameborder="0"
-          allow="autoplay; encrypted-media"
-          allowfullscreen
-        ></iframe>
-        <iframe
-          class="experiencias-item"
-          width="560"
-          height="315"
-          src="https://www.youtube.com/embed/9sCVcWD1Svs"
-          frameborder="0"
-          allow="autoplay; encrypted-media"
-          allowfullscreen
-        ></iframe>
-      </div>
+      </section>
     </main>
     <footer>
       <!-- Contenido del pie de página -->
