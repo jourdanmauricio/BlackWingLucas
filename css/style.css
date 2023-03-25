@@ -146,7 +146,7 @@ p {
 } */
 /* Estilos específicos de la página index */
 .hero {
-  background-image: url('/images/hero_img.jpg');
+  background-image: url('./images/hero_img.jpg');
   min-height: 100vh;
   background-size: cover;
   background-position: center right;
