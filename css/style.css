@@ -85,9 +85,10 @@ p {
 .nav__input {
   display: none;
 }
+
 .nav__menu {
-  display: grid;
-  grid-auto-flow: column;
+  display: flex;
+  flex-direction: row;
   gap: 1em;
 }
 
@@ -126,24 +127,6 @@ p {
   height: 75px;
 }
 
-/* 
-.menu {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  border: #0062cc;
-}
-
-.menu-items {
-  padding: 10px 20px;
-}
-
-.spans {
-  display: inline-block;
-  border: 2px solid #0062cc;
-  padding: 5px;
-  margin: 300px;
-} */
 /* Estilos específicos de la página index */
 .hero {
   background-image: url('../images/hero_img.jpg');
@@ -209,78 +192,59 @@ p {
   width: 100%;
 }
 
-/* .bienvenidos {
-  background-color: #262b2f;
-  color: #aaaaaa;
-  margin-bottom: 0;
-}
-
-.bienvenidos h2 {
-  color: #fff;
-}
-
-.seccion1 {
-  background-color: #262b2f;
-  color: #aaaaaa;
-  margin-top: 0;
-}
-
-.seccion1 h3 {
-  color: #fff;
-}
-
-.seccion2 {
-  background-color: #262b2f;
-  color: #aaaaaa;
-}
-
-.seccion2 h3 {
-  color: #fff;
-}
-
-.experiencias-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-} */
 /* Estilos específicos de la página empresa */
-/* .nosotros-container {
-  display: flex;
-  flex-direction: row;
-}
-.vision {
-  float: left;
-  width: 50%;
+
+.container {
+  padding: 30px 20px;
 }
 
-.mision {
-  float: right;
-  width: 50%;
+.about__section {
+  padding: 30px 0;
 }
 
-.empleados-container {
+.about__container {
+  padding-top: 60px;
   display: flex;
-  flex-direction: row;
-  gap: 20px;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.about__paragraph {
+  padding: 20px 0;
+}
+
+.staff__section {
+  padding: 30px 0;
+}
+
+.staff__container {
+  display: flex;
+  flex-flow: row wrap;
   justify-content: space-around;
 }
 
-.empleados-container .empleados-item img {
-  width: 100%;
-  height: auto;
-  border-radius: 50%;
-  margin-bottom: 20px;
+.staff__item {
+  margin-top: 60px;
 }
 
-.empleado h3 {
+.staff__item img {
+  max-width: 250px;
+  display: block;
+  margin: 0 auto;
+  border-radius: 50%;
+}
+
+.staff__item h3 {
   font-size: 1.5em;
   margin-bottom: 10px;
+  text-align: center;
 }
 
-.empleado p {
+.staff__item p {
   font-size: 1.2em;
   line-height: 1.4;
-} */
+  text-align: center;
+}
 
 /* Estilos específicos de la página servicios */
 /* .servicio {
@@ -406,7 +370,7 @@ p {
 
 /* @media (min-width:480px) and (max-width: 767px) {
     .box-responsive {
-    } 
+    }
 } */
 
 @media (max-width: 768px) {
@@ -415,33 +379,32 @@ p {
     display: block;
     cursor: pointer;
   }
+
   .nav__menu {
     position: fixed;
     top: 80px;
     bottom: 0;
-    left: 0;
-    right: 0;
+    left: -100%;
+    width: 100%;
     background-color: #0009;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    transition: transform 500ms ease-in-out;
-    transform: translate(-100%, 0);
+    transition: all 0.5s ease-in-out;
+  }
 
-    /* transform: translate(0, -100%); */
-    /* transform: translate(0, 100%); */
-    /* transform: translate(100%, 0); */
-  }
   .nav__input:checked + .nav__menu {
-    transform: translate(0, 0);
+    left: 0;
   }
+
   .nav__item {
     color: white;
   }
 }
 
 @media (min-width: 768px) {
+  /* main */
   .experiences__container {
     flex-direction: row;
   }
@@ -454,5 +417,13 @@ p {
   }
   .section--reverse {
     flex-direction: row-reverse;
+  }
+
+  /* about */
+  .about__container {
+    flex-direction: row;
+  }
+  .about__article {
+    width: 50%;
   }
 }
