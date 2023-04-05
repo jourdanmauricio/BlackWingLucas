@@ -2,6 +2,7 @@
 @use 'variables';
 @use 'menu';
 @use 'index';
+@use 'about';
 
 /* Estilos generales */
 html,
@@ -28,6 +29,7 @@ h2 {
 }
 
 h3 {
+  font-size: 20px;
   text-align: center;
   color: variables.$title-color;
 }
