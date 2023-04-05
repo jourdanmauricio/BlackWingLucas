@@ -1,0 +1,38 @@
+@use 'reset';
+@use 'menu';
+@use 'variables';
+
+/* Estilos generales */
+html,
+body {
+  max-width: 1440px;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+  background-color: #262b2f;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  color: #fff;
+}
+
+h3 {
+  text-align: center;
+  color: #fff;
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.5;
+  color: #aaaaaa;
+}
