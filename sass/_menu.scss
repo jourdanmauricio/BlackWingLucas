@@ -9,6 +9,7 @@
   color: #000;
   width: 100%;
   z-index: 50;
+  box-shadow: 0 4px 9px 0px rgba(41, 41, 41, 0.25);
 
   &__container {
     @include mixinsfunc.create-flex(space-between);
