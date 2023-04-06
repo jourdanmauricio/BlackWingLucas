@@ -40,3 +40,24 @@ p {
   line-height: 1.5;
   color: variables.$paragraph-color;
 }
+
+/* color placeholder input bootstrap  */
+.form-control::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #dee2e6;
+  opacity: 1; /* Firefox */
+}
+
+.form-control:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #dee2e6;
+}
+
+.form-control::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #dee2e6;
+}
+
+footer p {
+  font-size: 16px;
+}
