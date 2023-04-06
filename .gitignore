@@ -5,5 +5,4 @@
 *.scss.map
 
 *copy*
-.vscode
-/sass
+/.vscode

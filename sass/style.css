@@ -218,6 +218,74 @@
   text-align: center;
 }
 
+.heroserv {
+  background: linear-gradient(116deg, #ff3a3a -15.11%, #ae249a 51.46%, #081ea9 113.99%);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: fit-content;
+}
+.heroserv__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 90%;
+  margin: 0 auto;
+}
+@media (max-width: 768px) {
+  .heroserv__container {
+    flex-wrap: wrap-reverse;
+    gap: 2rem;
+  }
+}
+.heroserv__container > * {
+  flex-basis: 100%;
+}
+.heroserv__img img {
+  max-width: 100%;
+}
+.heroserv__content {
+  padding: 2rem 0;
+  text-align: center;
+}
+.heroserv__content > * {
+  padding: 0.625rem 0;
+}
+
+.services {
+  background: #fff;
+  padding: 1.875rem;
+}
+.services__container {
+  max-width: 61.25rem;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  flex-flow: row wrap;
+}
+.services .service__item {
+  max-width: 18.75rem;
+  flex: 1 1 18.75rem;
+  padding: 0.625rem;
+}
+.services .service__item:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+.services .service__picture {
+  max-width: 3.125rem;
+  margin: 0 auto;
+}
+.services .service__picture img {
+  width: 100%;
+  display: block;
+}
+.services .service__content > * {
+  color: #262b2f;
+  padding: 0.625rem;
+}
+
 .contact {
   position: relative;
   height: 90vh;
@@ -363,7 +431,7 @@
 /* Estilos generales */
 html,
 body {
-  max-width: 1440px;
+  max-width: 1600px;
   margin: 0 auto;
   font-family: Arial, sans-serif;
   background-color: #262b2f;

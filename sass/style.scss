@@ -3,12 +3,13 @@
 @use 'menu';
 @use 'index';
 @use 'about';
+@use 'services';
 @use 'contact';
 
 /* Estilos generales */
 html,
 body {
-  max-width: 1440px;
+  max-width: 1600px;
   margin: 0 auto;
   font-family: Arial, sans-serif;
   background-color: variables.$bg-color;
