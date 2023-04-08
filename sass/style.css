@@ -138,9 +138,10 @@
 }
 .featured__article a {
   margin: 0 auto;
-  padding: 10px 20px;
-  font-size: 20px;
+  padding: 10px 0px;
+  font-size: 18px;
   color: #fff;
+  border-bottom: 1px solid #fff;
   display: block;
   width: fit-content;
   transition: 500ms ease-in-out;
