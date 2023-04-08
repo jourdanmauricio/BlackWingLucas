@@ -36,6 +36,7 @@
 .featured {
   padding: mixinsfunc.pixels-rem(20);
   display: flex;
+  justify-content: center;
   flex-flow: row wrap;
 
   &__article {
@@ -51,6 +52,19 @@
       display: block;
       width: 90%;
       margin: 0 auto;
+    }
+
+    a {
+      margin: 0 auto;
+      padding: 10px 20px;
+      color: #fff;
+      border: 1px solid #fff;
+      display: block;
+      width: fit-content;
+
+      &:hover {
+        background: #222222;
+      }
     }
   }
 }
