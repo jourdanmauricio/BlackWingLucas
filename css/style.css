@@ -185,24 +185,24 @@
   padding: 0.625rem;
 }
 .testimonials__title {
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: 700;
   color: #000;
 }
 .testimonials__paragraph {
-  padding-top: 16px;
+  padding-top: 1rem;
   color: #262b2f;
 }
 .testimonials__icon {
   display: inline-block;
-  height: 28px;
-  width: 28px;
-  padding-right: 8px;
+  height: 1.75rem;
+  width: 1.75rem;
+  padding-right: 0.5rem;
 }
 .testimonials__stars {
-  padding-top: 16px;
+  padding-top: 1rem;
   display: flex;
-  gap: 16px;
+  gap: 1rem;
   justify-content: center;
 }
 

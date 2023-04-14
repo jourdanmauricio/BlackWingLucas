@@ -107,27 +107,27 @@
   }
 
   &__title {
-    font-size: 24px;
+    font-size: mixinsfunc.pixels-rem(24);
     font-weight: 700;
     color: #000;
   }
 
   &__paragraph {
-    padding-top: 16px;
+    padding-top: mixinsfunc.pixels-rem(16);
     color: variables.$bg-color;
   }
 
   &__icon {
     display: inline-block;
-    height: 28px;
-    width: 28px;
-    padding-right: 8px;
+    height: mixinsfunc.pixels-rem(28);
+    width: mixinsfunc.pixels-rem(28);
+    padding-right: mixinsfunc.pixels-rem(8);
   }
 
   &__stars {
-    padding-top: 16px;
+    padding-top: mixinsfunc.pixels-rem(16);
     display: flex;
-    gap: 16px;
+    gap: mixinsfunc.pixels-rem(16);
     justify-content: center;
   }
 }
